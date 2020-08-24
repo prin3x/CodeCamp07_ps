@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Pagination</title>
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="nav__icon">
+        LOGO
+      </div>
+      <div class="nav__navbar">
+        <ul class="nav__ul">
+          <li class="nav__li"><a href="#" class="nav__link">Home</a></li>
+          <li class="nav__li"><a href="#" class="nav__link">About</a></li>
+          <li class="nav__li nav__dropdown">
+            <a href="#" class="nav__link">Products</a>
+            <ul class="nav__ul__below">
+              <li class="nav__li__below">
+                <a href="#" class="nav__link__below">HTML</a>
+              </li>
+              <li class="nav__li__below">
+                <a href="#" class="nav__link__below">CSS</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav__li"><a href="#" class="nav__link">Services</a></li>
+          <li class="nav__li"><a href="#" class="nav__link">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="tooltip__wrapper">
+      <div class="tooltip__text" title="Hello! have a great day!">
+        Hover Over Me
+      </div>
+    </div>
+    <div class="container">
+      <h1 class="number">1</h1>
+      <div class="pagination">
+        <a href="#" id="first" class="link-first">&laquo;</a>
+        <a href="#" id="link-1" class="link">1</a>
+        <a href="#" id="link-2" class="link">2</a>
+        <a href="#" id="link-3" class="link">3</a>
+        <a href="#" id="link-4" class="link">4</a>
+        <a href="#" id="link-5" class="link">5</a>
+        <a href="#" id="last" class="link-last">&raquo;</a>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

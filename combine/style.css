@@ -1,0 +1,166 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.tooltip__wrapper {
+  margin-top: 7.5rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tooltip__text {
+  font-size: 2rem;
+  position: relative;
+  cursor: help;
+}
+
+.tooltip__text:hover::after {
+  content: attr(title);
+  font-size: 1.25rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin-top: -3rem;
+  width: 100%;
+  background: #a6e0e7;
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem;
+}
+
+.tooltip__text:hover::before {
+  border: solid;
+  border-color: #a6e0e7 transparent;
+  border-width: 12px 6px 0 6px;
+  content: "";
+  left: 50%;
+  bottom: 35px;
+  position: absolute;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  background: #e2a9a9;
+}
+
+.nav__icon {
+  align-self: center;
+  font-size: 1.5rem;
+}
+
+.nav__ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.nav__li {
+  list-style: none;
+  position: relative;
+  min-width: 100px;
+  min-height: 40px;
+  padding-top: 1rem;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: #000;
+  position: relative;
+  font-size: 1.2rem;
+}
+
+.nav__li:hover {
+  color: #fff;
+  background: rgb(226, 196, 169);
+}
+
+.nav__link:hover::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  border-bottom: 2px solid #fff;
+}
+
+.nav__ul__below {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  list-style: none;
+  background: rgb(226, 196, 169);
+  padding-left: 0;
+}
+
+.nav__dropdown:hover .nav__ul__below {
+  display: inherit;
+}
+
+.nav__li__below {
+  min-width: 100px;
+  min-height: 40px;
+  padding-top: 1rem;
+}
+
+.nav__link__below {
+  text-decoration: none;
+  color: #000;
+  font-size: 1.1rem;
+}
+/* .nav__link__below::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  border-bottom: 2px solid #000;
+} */
+
+.nav__link__below:hover {
+  color: #fff;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+  min-width: 90vw;
+  overflow: hidden;
+}
+
+.number {
+  font-size: 10rem;
+}
+
+.pagination a {
+  text-decoration: none;
+  padding: 1rem;
+  font-size: 1.5rem;
+  background: #eee;
+  float: left;
+  color: #000;
+  overflow: hidden;
+}
+
+.pagination a:hover {
+  background: #777;
+}
+.pagination .link:focus {
+  background: #777;
+}

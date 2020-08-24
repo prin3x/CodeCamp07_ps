@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"
+      integrity="sha384-3Nqiqht3ZZEO8FKj7GR1upiI385J92VwWNLj+FqHxtLYxd9l+WYpeqSOrLh0T12c"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Reddit Layout</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar__logo">
+        <i class="fab fa-reddit"></i>
+        reddit
+      </div>
+      <div class="navbar__searchbox">
+        <input
+          class="form-control"
+          type="search"
+          placeholder="Search"
+          aria-label="Search"
+        />
+      </div>
+      <div class="navbar__authen">
+        <button class="navbar__authen--login btn btn-outline-primary">
+          Log In
+        </button>
+        <button class="navbar__authen--logout btn btn-primary">Log Out</button>
+        <svg
+          width="2.5rem"
+          height="2.5rem"
+          viewBox="0 0 16 16"
+          class="bi bi-person-fill"
+          fill="#999"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"
+          />
+        </svg>
+      </div>
+    </nav>
+    <!-- Header -->
+    <header class="header">
+      <h2 class="highlight-text">Trending today</h2>
+
+      <div class="header__highlight-box">
+        <div class="header__highlight header__highlight--1">
+          <h2 class="header__highlight--title">Lorem, ipsum.</h2>
+          <h3>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          </h3>
+        </div>
+        <div class="header__highlight header__highlight--2">
+          <h2 class="header__highlight--title">Lorem, ipsum.</h2>
+          <h3>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          </h3>
+        </div>
+        <div class="header__highlight header__highlight--3">
+          <h2 class="header__highlight--title">Lorem, ipsum.</h2>
+          <h3>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          </h3>
+        </div>
+        <div class="header__highlight header__highlight--4">
+          <h2 class="header__highlight--title">Lorem, ipsum.</h2>
+          <h3>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          </h3>
+        </div>
+      </div>
+    </header>
+    <!-- Post -->
+    <section class="post">
+      <!-- All the left side -->
+      <div class="post__left">
+        <div class="post__update">
+          <h2>Update from reddit</h2>
+          <div class="post__update--container">
+            Keep yourself safe and informed
+          </div>
+        </div>
+        <!-- navigation -->
+        <div class="post__nav">
+          Navigation
+        </div>
+        <!-- Actual Post -->
+        <div class="post__container">
+          <div class="post__score-box">
+            <i class="fas fa-arrow-up"></i>
+            <div class="post__score">9.4k</div>
+            <i class="fas fa-arrow-down"></i>
+          </div>
+
+          <div class="post__content">
+            <div class="post__header">
+              <span>r/interestingas </span>
+              <span>JOINED</span>
+            </div>
+            <h3 class="post__title">
+              Lorem ipsum dolor sit amet.
+            </h3>
+            <div class="post__content--inside">
+              <div class="post__img"></div>
+
+              <div class="post__comments">
+                <span>760 points</span>
+                <span>1.2k comments</span>
+              </div>
+            </div>
+            <div class="post__info">
+              <span>1.9k comments</span>
+              <span>Share</span>
+              <span>Save</span>
+              <span>...</span>
+            </div>
+          </div>
+        </div>
+        <!-- Post 2 -->
+
+        <!-- Actual Post -->
+        <div class="post__container">
+          <div class="post__score-box">
+            <i class="fas fa-arrow-up"></i>
+            <div class="post__score">3.9k</div>
+            <i class="fas fa-arrow-down"></i>
+          </div>
+
+          <div class="post__content">
+            <div class="post__header">
+              <span>r/interestingas </span>
+              <span>JOINED</span>
+            </div>
+            <h3 class="post__title">
+              Lorem ipsum dolor sit amet.
+            </h3>
+            <div class="post__content--inside">
+              <div class="post__img"></div>
+
+              <div class="post__comments">
+                <span>760 points</span>
+                <span>1.2k comments</span>
+              </div>
+            </div>
+            <div class="post__info">
+              <span>1.2k comments</span>
+              <span>Share</span>
+              <span>Save</span>
+              <span>...</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Actual Post -->
+        <div class="post__container">
+          <div class="post__score-box">
+            <i class="fas fa-arrow-up"></i>
+            <div class="post__score">37.4k</div>
+            <i class="fas fa-arrow-down"></i>
+          </div>
+
+          <div class="post__content">
+            <div class="post__header">
+              <span>r/interestingas </span>
+              <span>JOINED</span>
+            </div>
+            <h3 class="post__title">
+              Lorem ipsum dolor sit amet.
+            </h3>
+            <div class="post__content--inside">
+              <div class="post__img"></div>
+
+              <div class="post__comments">
+                <span>590 points</span>
+                <span>1.9k comments</span>
+              </div>
+            </div>
+            <div class="post__info">
+              <span>1.2k comments</span>
+              <span>Share</span>
+              <span>Save</span>
+              <span>...</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Post Right -->
+      <div class="post__right">
+        <div class="post__top">
+          <div class="post__top--title">
+            Today's Top Growing Communities
+          </div>
+          <div class="post__top--content">
+            <div class="post__ranking-container">
+              <span class="ranking">1</span>
+              <span class="ranking-info">r/Music</span>
+            </div>
+            <div class="post__ranking-container">
+              <span class="ranking">2</span>
+              <span class="ranking-info">r/Welath</span>
+            </div>
+            <div class="post__ranking-container">
+              <span class="ranking">3</span>
+              <span class="ranking-info">r/Video</span>
+            </div>
+            <div class="post__ranking-container">
+              <span class="ranking">4</span>
+              <span class="ranking-info">r/apple</span>
+            </div>
+            <div class="post__ranking-container">
+              <span class="ranking">5</span>
+              <span class="ranking-info">r/Kpop</span>
+            </div>
+            <button class="btn btn-primary top-btn">View all</button>
+            <span class="btn-group">
+              <button class="btn btn-outline-primary">Sport</button>
+              <button class="btn btn-outline-primary">News</button>
+              <button class="btn btn-outline-primary">Gaming</button>
+              <button class="btn btn-outline-primary">Aww</button>
+            </span>
+          </div>
+        </div>
+        <!-- Trending Communities -->
+        <div class="trending">
+          <div class="trending--title">
+            Trending Communities
+          </div>
+          <div class="trending--content">
+            <div class="trending-container">
+              <span class="communities">
+                r/choosemyalignment<br />
+                24,782 members
+              </span>
+              <button class="btn btn-primary btn-commu">JOIN</button>
+            </div>
+            <div class="trending-container">
+              <span class="communities">
+                r/choosemyalignment<br />
+                134,654 members
+              </span>
+              <button class="btn btn-primary btn-commu">JOIN</button>
+            </div>
+            <div class="trending-container">
+              <span class="communities">
+                r/choosemyalignment<br />
+                204,102 members
+              </span>
+              <button class="btn btn-primary btn-commu">JOIN</button>
+            </div>
+            <div class="trending-container">
+              <span class="communities">
+                r/choosemyalignment<br />
+                222,777 members
+              </span>
+              <button class="btn btn-primary btn-commu">JOIN</button>
+            </div>
+            <div class="trending-container">
+              <span class="communities">
+                r/choosemyalignment<br />
+                95,282 members
+              </span>
+              <button class="btn btn-primary btn-commu">JOIN</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
